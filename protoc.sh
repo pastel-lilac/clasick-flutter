@@ -1,1 +1,0 @@
-protoc --dart_out=grpc:lib/interface/grpc -I protobuf protobuf/user_rpc.proto
