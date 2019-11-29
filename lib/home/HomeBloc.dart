@@ -21,13 +21,13 @@ class HomeBloc implements Bloc {
     switch (i) {
       case 0:
         _navBarSelectionController.add(NavBarSelection.Playlist);
-        return;
+        break;
       case 1:
         _navBarSelectionController.add(NavBarSelection.MyMusic);
-        return;
+        break;
       case 2:
         _navBarSelectionController.add(NavBarSelection.Search);
-        return;
+        break;
     }
   }
 

@@ -5,7 +5,7 @@ class Music {
   // other key
   int artistId;
   int albumId;
-  Music({this.id, this.name});
+  Music(this.id, this.name);
 
   Music.fromJson(Map<String, dynamic> json) {
     id = json['id'];

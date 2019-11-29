@@ -2,11 +2,12 @@ class Playlist {
   int id;
   String name;
   String description;
+  String iconPath;
   // other key
   int artistId;
   int albumId;
-  Playlist({this.id, this.name});
 
+  // TODO: implement mapping data
   Playlist.fromJson(Map<String, dynamic> json) {
     id = json['id'];
     name = json['name'];
@@ -18,4 +19,7 @@ class Playlist {
     data['name'] = this.name;
     return data;
   }
+
+  Playlist(this.id, this.name, this.description, this.iconPath, this.artistId,
+      this.albumId);
 }

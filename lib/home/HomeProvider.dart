@@ -7,11 +7,8 @@ class HomeProvider extends BlocProvider<HomeBloc> {
   HomeProvider({
     Widget child,
   }) : super(
-    creator: (context, _bag) {
-      return HomeBloc();
-    },
+    creator: (context, _bag) => HomeBloc(),
     child: child,
   );
-
   static HomeBloc of(BuildContext context) => BlocProvider.of(context);
 }

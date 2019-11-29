@@ -11,19 +11,18 @@ import 'services/ServiceProvider.dart';
 
 Future main() async {
   debugPaintSizeEnabled = false;
-  runApp(
-    const ServiceProvider(musicService: MockMusicService(), child: App())
-  );
+  runApp(const ServiceProvider(
+    musicService: MockMusicService(),
+    child: App(),
+  ));
 }
+
 class App extends StatelessWidget {
   const App();
   @override
   Widget build(BuildContext context) {
     return BlocProviderTree(
-      blocProviders: [
-        MusicProvider(),
-        HomeProvider()
-      ],
+      blocProviders: [MusicProvider(), HomeProvider()],
       child: MaterialApp(
         title: 'Clasick',
         theme: appTheme,
